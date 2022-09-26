@@ -22,9 +22,10 @@ function eventListeners() {
     asunto.addEventListener("blur", validarFormulario);
     mensaje.addEventListener("blur", validarFormulario);
 
+    btnReset.addEventListener("click", resetearFormulario);
+
     formulario.addEventListener("submit", enviarEmail);
 
-    btnReset.addEventListener("click", resetearFormulario);
 }
 
 // Funciones
@@ -122,6 +123,7 @@ function enviarEmail(e) {
 }
 
 function resetearFormulario() {
+
     formulario.reset();
 
     iniciarApp();
